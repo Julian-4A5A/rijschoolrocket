@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" text="text/css">
+        <title>Rijschool Rocket - Aanmelden</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+
+    </head>
+    <body>
+
+        <header>
+            <div id="imageauto"><img src="Auto.png" style="height:100px;width:100px"></div>
+            <h2>Welkom bij Rijschool Rocket!</h2>
+            <div class="menu">
+            <ul id="nav" class="navbar">
+                <li><a class="meunut" href="/Homepagina/Index.html">Home</a></li>
+                <li><a class="meunut" href="/Bedrijfsinformatie/Bedrijfsinformatie.html">Rijschool Rocket</a>
+                     <ul>
+                        <li><a class="meunut" href="#Organistatie">Organistatie</a></li>
+                        <li><a class="meunut" href="#Voorwaarden">Voorwaarden</a></li>
+                        <li><a class="meunut" href="#Vactures">Vactures</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Tarieven/Lespakketten.html">Tarieven</a>
+                    <ul>
+                        <li><a class="meunut" href="#Theorieles">Theorieles</a></li>
+                        <li><a class="meunut" href="#Auto">Auto</a></li>
+                        <li><a class="meunut" href="#Vrachtwagen">Vrachtwagen</a></li>
+                        <li><a class="meunut" href="#Aanhangwagen">Aanhangwagen</a></li>
+                        <li><a class="meunut" href="#Bromfiets">Bromfiets</a></li>
+                        <li><a class="meunut" href="#Motor">Motor</a></li>
+                        <li><a class="meunut" href="#Taxi">Taxi</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Aanmelden/Aanmeld.html">Aanmelden & Inloggen</a>
+                    <ul>
+                        <li><a class="meunut" href="#Aanmelden">Aanmelden</a></li>
+                        <li><a class="meunut" href="#Inloggen">Inloggen</a></li>
+                        <li><a class="meunut" href="MijnRaket.html" target="_self">Mijn Rocket</a></li>
+                        
+                    </ul></li>
+                <li><a class="meunut" href="/Contact/Contact.html">Contact</a>
+                    <ul>
+                        <li><a class="meunut" href="#Bel">Bel-Me-Nu</a></li>
+                        <li><a class="meunut" href="#Locatie">Locatie</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Fotos/foto's.html">Foto's</a></li>
+                <li><a class="meunut" href="/Derdeman/Links.html">Links</a></li>
+                
+            </ul>
+        </div>
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+        </header>
+        
+        <p class="underline"><a name="Inloggen"></a>Inloggen</p>
+        Hier kunt U inloggen op uw personlijke pagina.
+        <table border="1">
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <h3>Login Area</h3>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <form id="login" name="login">
+                        <input name="id" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input name="pass" type="password">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <input onclick="pasuser(this.form);" type="button" value="Login" href="aanemeld.html">
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <br>
+                        <input type="reset">
+                    </form>
+                    </center>
+                </td>
+            </tr>
+        </table>
+
+
+        <p class="underline"><a name="Aanmelden"></a>Aanmelden</p>
+        Hieronder kunt u uw desbetreffende informatie invullen voor een aanmelding om een proefles te doen.
+        <br>We zullen op basis van deze gegevens contact met u opnemen om een afspraak te maken voor een proefles.
+		
+		<table>
+            <tr>
+				<td>
+					<form id="form" method="post" action="mailto:430149@edu.rocmn.nl">
+
+						<p><div id="text">Naam: </div><input type="text" name="Naam" size="13" maxlength="13"></p>
+						<p><div id="text">Adres: </div><input type="text" name="Adres" size="20" maxlength="30"></p>
+						<p><div id="text">Postcode: </div><input type="text" name="Postcode" size="6" maxlength="6"></p>
+						<p><div id="text">Woonplaats: </div><input type="text" name="Woonplaats" size="11" maxlength="11"></p>
+						<p><div id="text">E-Mail: </div><input type="email" name="E-Mail" size="20" maxlength="999" id="mail1" onkeyup="MailTekens()"></p>
+						<p><div id="text">Opnieuw E-Mail: </div><input type="email" name="E-Mail" size="20" maxlength="999" id="mail2" onkeyup="checkMail(); return false;"></p>
+						<span id="confirmMailMessage" class="confirmMailMessage"></span>
+						<p><div id="text">Wachtwoord: </div><input type="password" name="wachtwoord" size="10" maxlength="10" id="pass1" onkeyup="PassTekens()"></p>
+						<p><div id="text">Opnieuw Wachtwoord: </div><input type="password" name="wachtwoord" size="10" maxlength="10" id="pass2" onkeyup="checkPass(); return false;"></p>
+						<span id="confirmPassMessage" class="confirmPassMessage"></span>
+						<p><div id="text">Telefoonnummer: </div><input type="text" name="Telefoonnummer" size="10" maxlength="10" onkeyup="PhoneTekens()"></p>
+					    <p><div id="text">Opnieuw Telefoonnummer: </div><input type="text" name="Telefoonnummer" size="10" maxlength="10"></p>
+					    <span id="confirmPhoneMessage" class="confirmPhoneMessage"></span>
+					</form>
+				</td>
+					
+				<td>
+					<div id="bericht"><p><div id="text">Bericht: </div><textarea name="message" rows="20" cols="50"></textarea></p></div>
+				</td>
+			</tr>
+        </table>
+			
+		<table id="buttons">
+            <tr>
+                <td><div id="submit"><input type="button" value="Submit" onClick="pasuser(this.form)"></div></td>
+                <td><div id="reset"><input type="reset" value="Reset"></div></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <table id="image">
+            <tr>
+                <td style="width:50px;"><img src="Facebook.png" style="height:50px; width:50px;"></td>
+                <td style="width:50px;"><img src="twitter.png" style="height:50px; width:50px;"></td>
+            </tr>
+        </table>
+        
+        
+        <footer>
+            disclaimer
+        </footer>
+    
+        <script>
+        
+            var goodColor = "#66cc66";
+            var badColor = "#ff6666";
+           
+            function checkPass(){
+                var pass1 = document.getElementById('pass1');
+                var pass2 = document.getElementById('pass2');
+                var PassMessage = document.getElementById('confirmPassMessage');
+                    
+                if(pass1.value == pass2.value){
+                    pass2.style.backgroundColor = goodColor;
+                    PassMessage.style.color = goodColor;
+                    PassMessage.innerHTML = "Passwords Zijn Gelijk!";
+                }
+                    
+                else{
+                    pass2.style.backgroundColor = badColor;
+                    PassMessage.style.color = badColor;
+                    PassMessage.innerHTML = "Passwords Zijn Niet Gelijk!";
+                }
+            }
+        
+            function pasuser(form) {
+                if (form.id.value=="Test") { 
+                if (form.pass.value=="Test") {              
+                    location="login.html";
+                }
+                
+                    else {
+                        alert("Invalid Password");
+                    }
+                } 
+                
+                else {  
+                    alert("Invalid UserID");
+                }
+            }
+            
+            function checkMail(){
+                var mail1 = document.getElementById("mail1");
+                var mail2 = document.getElementById("mail2");
+                var MailMessage = document.getElementById("confirmMailMessage");
+                
+                if(mail1.value == mail2.value){
+                    mail2.style.backgroundColor = goodColor;
+                    MailMessage.style.color = goodColor;
+                    MailMessage.innerHTML = "E-mail is gelijk!";
+                }
+                
+                else{
+                    mail2.style.backgroundColor = badColor;
+                    MailMessage.style.color = badColor;
+                    MailMessage.innerHTML = "E-mail is niet gelijk!";
+                }
+            }
+            
+            function PassTekens(){
+                var PassMessage = document.getElementById("confirmPassMessage");
+            }
+            
+            function MailTekens(){
+                var MailMessage = document.getElementById("confirmMailMessage");
+            }
+            
+            function PhoneTekens(){
+                var PhoneMessage = document.getElementById("confirmPhoneMessage");
+                try {
+                    if(PhoneMessage == "") throw "Vul iets in!"
+                    if(isNaN(PhoneMessage)) throw "Ongeldige tekens!"
+                    PhoneMessage = Number(PhoneMessage);
+                    if (PhoneMessage > 10) throw "Teveel nummers!"
+                }
+                
+                catch(err) {
+                    PhoneMessage.innerHTML = err;
+                }
+            }
+               
+               
+        </script>
+
+    </body>
+</html>

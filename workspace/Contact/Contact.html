@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" text="text/css">
+        <title>Rijschool Rocket - Contact</title>
+    </head>
+    <body>
+        <header>
+            <div id="imageauto"><img src="Auto.png" style="height:100px;width:100px"></div>
+            <h2>Welkom bij Rijschool Rocket!</h2>
+            <div id="menu">
+            <ul id="nav">
+                <li><a class="meunut" href="/Homepagina/Index.html">Home</a></li>
+                <li><a class="meunut" href="/Bedrijfsinformatie/Bedrijfsinformatie.html">Rijschool Rocket</a>
+                     <ul>
+                        <li><a class="meunut" href="#Organistatie">Organistatie</a></li>
+                        <li><a class="meunut" href="#Voorwaarden">Voorwaarden</a></li>
+                        <li><a class="meunut" href="#Vactures">Vactures</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Tarieven/Lespakketten.html">Tarieven</a>
+                    <ul>
+                        <li><a class="meunut" href="#Theorieles">Theorieles</a></li>
+                        <li><a class="meunut" href="#Auto">Auto</a></li>
+                        <li><a class="meunut" href="#Vrachtwagen">Vrachtwagen</a></li>
+                        <li><a class="meunut" href="#Aanhangwagen">Aanhangwagen</a></li>
+                        <li><a class="meunut" href="#Bromfiets">Bromfiets</a></li>
+                        <li><a class="meunut" href="#Motor">Motor</a></li>
+                        <li><a class="meunut" href="#Taxi">Taxi</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Aanmelden/Aanmeld.html">Aanmelden & Inloggen</a>
+                    <ul>
+                        <li><a class="meunut" href="#Aanmelden">Aanmelden</a></li>
+                        <li><a class="meunut" href="#Inloggen">Inloggen</a></li>
+                        <li><a class="meunut" href="/Aanmelden/MijnRaket.html" target="_self">Mijn Rocket</a></li>
+                        
+                    </ul></li>
+                <li><a class="meunut" href="/Contact/Contact.html">Contact</a>
+                    <ul>
+                        <li><a class="meunut" href="#Bel">Bel-Me-Nu</a></li>
+                        <li><a class="meunut" href="#Locatie">Locatie</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Fotos/foto's.html">Foto's</a></li>
+                <li><a class="meunut" href="/Derdeman/Links.html">Links</a></li>
+                
+            </ul>
+        </div>
+        </header>
+        
+        Dit is onze Contact pagina.
+        <p class="underline"><a name="Bel"></a>Bel-Me-Nu</p>
+        Mijn nummer is 0612345678.
+        
+        <p class="underline"><a name="Locatie"></a>Locatie</p>
+        Google Maps venster wordt hier getoond.
+        
+        <table>
+            <tr>
+				<td>
+					<form id="form" method="post" action="mailto:430149@edu.rocmn.nl">
+						<p><div id="text">Naam: </div><input type="text" name="Naam" size="13" maxlength="13"></p>
+						<span id="confirmMessageName" class="confirmMessageName"></span>
+						<p><div id="text">Adres: </div><input type="text" name="Adres" size="20" maxlength="30"></p>
+						<p><div id="text">Postcode: </div><input type="text" name="Postcode" size="6" maxlength="6"></p>
+						<p><div id="text">Woonplaats: </div><input type="text" name="Woonplaats" size="11" maxlength="11"></p>
+						<p><div id="text">E-Mail: </div><input type="email" name="E-Mail" size="20" maxlength="999" id="mail1"></p>
+						<p><div id="text">Opnieuw E-Mail: </div><input type="email" name="E-mail" size="20" maxlength="999" id="mail2" onkeyup="checkMail(); return false;"></p>
+						<span id="confirmMessageMail" class="confirmMessageMail"></span>
+						<p><div id="text">Wachtwoord: </div><input type="password" name="wachtwoord" size="10" maxlength="10" id="pass1"></p>
+						<p><div id="text">Opnieuw Wachtwoord: </div><input type="password" name="wachtwoord" size="10" maxlength="10" id="pass2" onkeyup="checkPass(); return false;"></p>
+						<span id="confirmMessagePass" class="confirmMessagePass"></span>
+						<p><div id="text">Telefoonnummer: </div><input type="text" name="Telefoonnummer" size="10" maxlength="10" id="Phone" onkeyup="checkPhone(); return false;"></p>
+						<span id="confirmMessagePhone" class="confirmMessagePhone"></span>
+					</form>
+				</td>
+				<td>
+					<div id="bericht"><p><div id="text">Bericht: </div><textarea name="message" rows="20" cols="50"></textarea></p></div>
+				</td>
+			</tr>
+        </table>
+        
+    	<br>
+	    <br>
+			
+		<table id="buttons">
+            <tr>
+                <td><div id="submit"><input type="button" value="Submit" onClick="pasuser(this.form)"></div></td>
+                <td><div id="reset"><input type="reset" value="Reset"></div></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <table id="image">
+            <tr>
+                <td style="width:50px;"><img src="Facebook.png" style="height:50px; width:50px;"></td>
+                <td style="width:50px;"><img src="twitter.png" style="height:50px; width:50px;"></td>
+            </tr>
+        </table>
+        
+        
+        
+        
+        
+        
+        
+        <script type="text/javascript">
+            function checkPass(){
+                var pass1 = document.getElementById('pass1');
+                var pass2 = document.getElementById('pass2');
+                var message = document.getElementById('confirmMessagePass');
+                var goodColor = "#66cc66";
+                var badColor = "#ff6666";
+                    
+                if(pass1.value == pass2.value){
+                    pass2.style.backgroundColor = goodColor;
+                    message.style.color = goodColor;
+                    message.innerHTML = "Passwords Zijn Gelijk!"
+                }
+                    
+                else{
+                    pass2.style.backgroundColor = badColor;
+                    message.style.color = badColor;
+                    message.innerHTML = "Passwords Zijn Niet Gelijk!"
+                }
+            }
+            
+            function checkPhone() {
+                var number = document.getElementById("Phone").value;
+                var message = document.getElementById("confirmMessagePhone").innerHTML;
+                try {
+                    if(number == "") throw "Vul een nummer in";
+                    if(isNaN(number)) throw "Ongeldige invoer";
+                    if(number < 5) throw "too low";
+                    if(number > 10) throw "too high";
+                }
+            
+                catch(err) {
+                    message.innerHTML = err;
+                }
+            }
+            
+            function checkMail(){
+                var mail1 = document.getElementById("mail1");
+                var mail2 = document.getElementById("mail2");
+                var message = document.getElementById("confirmMessageMail");
+                var goodColor = "#66cc66";
+                var badColor = "#ff6666";
+                
+                if(mail1.value == mail2.value){
+                    mail2.style.backgroundColor = goodColor;
+                    message.style.color = goodColor;
+                    message.innerHTML = "E-mail Is Gelijk!";
+                }
+                
+                else{
+                    mail2.style.backgroundColor = badColor;
+                    message.style.color = badColor;
+                    message.innerHTML = "E-mail Is Niet Gelijk!";
+                }
+                
+                if(mail1.value = text.match(/abcdefghijklmnopqrstuvwxyz/g)){
+                    mail1.style.backgroundColor = goodColor;
+                    message.style.color = goodColor;
+                    message.innerHTML = "E-mail is geldig!"
+                }
+                
+                else{
+                    mail2.style.backgroundColor = badColor;
+                    message.style.color = badColor;
+                    message.innerHTML = "E-mail bevat ongeldige tekens!";
+                }
+            }
+            
+
+        </script>
+        
+        
+        <footer>
+            disclaimer
+        </footer>
+    </body>
+</html>

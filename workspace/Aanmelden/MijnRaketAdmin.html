@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" text="text/css">
+        <style>
+            table, td, tr {
+                border: 1px solid black;
+            }
+        </style>
+        <title>Rijschool Rocket - Mijn Rocket</title>
+    </head>
+    <body>
+        <header>
+        <div id="imageauto"><img src="Auto.png" style="height:100px;width:100px"></div>
+            <h2>Welkom bij Rijschool Rocket!</h2>
+            <div id="menu">
+            <ul id="nav">
+                <li><a class="meunut" href="/Homepagina/Index.html">Home</a></li>
+                <li><a class="meunut" href="/Bedrijfsinformatie/Bedrijfsinformatie.html">Rijschool Rocket</a>
+                     <ul>
+                        <li><a class="meunut" href="#Organistatie">Organistatie</a></li>
+                        <li><a class="meunut" href="#Voorwaarden">Voorwaarden</a></li>
+                        <li><a class="meunut" href="#Vactures">Vactures</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Tarieven/Lespakketten.html">Tarieven</a>
+                    <ul>
+                        <li><a class="meunut" href="#Theorieles">Theorieles</a></li>
+                        <li><a class="meunut" href="#Auto">Auto</a></li>
+                        <li><a class="meunut" href="#Vrachtwagen">Vrachtwagen</a></li>
+                        <li><a class="meunut" href="#Aanhangwagen">Aanhangwagen</a></li>
+                        <li><a class="meunut" href="#Bromfiets">Bromfiets</a></li>
+                        <li><a class="meunut" href="#Motor">Motor</a></li>
+                        <li><a class="meunut" href="#Taxi">Taxi</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Aanmelden/Aanmeld.html">Aanmelden & Inloggen</a>
+                    <ul>
+                        <li><a class="meunut" href="#AanmeldenAdmin">Aanmelden</a></li>
+                        <li><a class="meunut" href="#Inloggen">Inloggen</a></li>
+                        <li><a class="meunut" href="MijnRaketAdmin.html" target="_self">Mijn Rocket</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Contact/Contact.html">Contact</a>
+                    <ul>
+                        <li><a class="meunut" href="#Bel">Bel-Me-Nu</a></li>
+                        <li><a class="meunut" href="#Locatie">Locatie</a></li>
+                    </ul></li>
+                <li><a class="meunut" href="/Fotos/foto's.html">Foto's</a></li>
+                <li><a class="meunut" href="/Derdeman/Links.html">Links</a></li>
+            </ul>
+        </div>
+        </header>
+        
+        <h1>Formulieren - Beheerder</h1>
+        
+        <table style="width:80%">
+            <tr>
+                <th>Maandag</th>
+                <th>Dinsdag</th>
+                <th>Woensdag</th>
+                <th>Donderdag</th>
+                <th>Vrijdag</th>
+                <th>Zaterdag</th>
+                <th>Zondag</th>
+            </tr>
+            
+            <tr>
+                <td id="maandag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresMaandag"></div>
+                    Lesplan: <div id="LesplanMaandag"></div>
+                    Opmerking: <div id="OpmerkingMaandag"></div>
+                </td>
+                
+                <td id="dinsdag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresDinsdag"></div>
+                    Lesplan: <div id="LesplanDinsdag"></div>
+                    Opmerking: <div id="OpmerkingDinsdag"></div>
+                </td>
+                
+                <td id="woensdag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresWoensdag"></div>
+                    Lesplan: <div id="LesplanWoensdag"></div>
+                    Opmerking: <div id="OpmerkingWoensdag"></div>
+                </td>
+                
+                <td id="donderdag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresDonderdag"></div>
+                    Lesplan: <div id="LesplanDonderdag"></div>
+                    Opmerking: <div id="OpmerkingDonderdag"></div>
+                </td>
+                
+                <td id="vrijdag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresVrijdag"></div>
+                    Lesplan: <div id="LesplanVrijdag"></div>
+                    Opmerking: <div id="OpmerkingVrijdag"></div>
+                </td>
+                
+                <td id="zaterdag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresZaterdag"></div>
+                    Lesplan: <div id="LesplanZaterdag"></div>
+                    Opmerking: <div id="OpmerkingZaterdag"></div>
+                </td>
+                
+                <td id="zondag">
+                    Leerling: <div id="LeerlingMaandag"></div>
+                    Adres: <div id="AdresZondag"></div>
+                    Lesplan: <div id="LesplanZondag"></div>
+                    Opmerking: <div id="OpmerkingZondag"></div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresMaandagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanMaandagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingMaandagInvoer">
+                    <br>
+                    <button onclick="MaandagAdmin()">Verstuur</button>
+                </td>
+
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresDinsdagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanDinsdagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingDinsdagInvoer">
+                    <br>
+                    <button onclick="DinsdagAdmin()">Verstuur</button>
+                </td>
+
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresWoensdagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanWoensdagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingWoensdagInvoer">
+                    <br>
+                    <button onclick="WoensdagAdmin()">Verstuur</button>
+                </td>
+
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresDonderdagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanDonderdagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingDonderdagInvoer">
+                    <br>
+                    <button onclick="DonderdagAdmin()">Verstuur</button>
+                </td>
+
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresVrijdagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanVrijdagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingVrijdagInvoer">
+                    <br>
+                    <button onclick="VrijdagAdmin()">Verstuur</button>
+                </td>
+
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresZaterdagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanZaterdagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingZaterdagInvoer">
+                    <br>
+                    <button onclick="ZaterdagAdmin()">Verstuur</button>
+                </td>
+                
+                <td>
+                    Leerling: <input id="LeerlingMaandagInvoer">
+                    <br>
+                    Adres: <input id="AdresZondagInvoer">
+                    <br>
+                    Lesplan: <input id="LesplanZondagInvoer">
+                    <br>
+                    Opmerking: <input id="OpmerkingZondagInvoer">
+                    <br>
+                    <button onclick="ZondagAdmin()">Verstuur</button>
+                </td>
+            </tr>
+        </table>
+
+        
+        
+        
+        <table id="image">
+            <tr>
+                <td style="width:50px;"><img src="Facebook.png" style="height:50px; width:50px;"></td>
+                <td style="width:50px;"><img src="twitter.png" style="height:50px; width:50px;"></td>
+            </tr>
+        </table>
+        
+        <script>
+        
+        function MaandagAdmin(){
+            var maandag = {
+                Leerling: document.getElementById("LeerlingMaandagInvoer").value,
+                Adres: document.getElementById("AdresMaandagInvoer").value,
+                Lesplan: document.getElementById("LesplanMaandagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingMaandagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = zondag.Leerling;
+            document.getElementById("AdresMaandag").innerHTML = maandag.Adres;
+            document.getElementById("LesplanMaandag").innerHTML = maandag.Lesplan;
+            document.getElementById("OpmerkingMaandag").innerHTML = maandag.Opmerking;
+        }
+        
+        function DinsdagAdmin(){
+            var dinsdag = {
+                Leerling: document.getElementById("LeerlingDinsdagInvoer").value,
+                Adres: document.getElementById("AdresDinsdagInvoer").value,
+                Lesplan: document.getElementById("LesplanDinsdagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingDinsdagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = dinsdag.Leerling;
+            document.getElementById("AdresDinsdag").innerHTML = dinsdag.Adres;
+            document.getElementById("LesplanDinsdag").innerHTML = dinsdag.Lesplan;
+            document.getElementById("OpmerkingDinsdag").innerHTML = dinsdag.Opmerking;
+        }
+        
+        function WoensdagAdmin(){
+            var woensdag = {
+                Leerling: document.getElementById("LeerlingWoensdagInvoer").value,
+                Adres: document.getElementById("AdresWoensdagInvoer").value,
+                Lesplan: document.getElementById("LesplanWoensdagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingWoensdagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = woensdag.Leerling;
+            document.getElementById("AdresWoensdag").innerHTML = woensdag.Adres;
+            document.getElementById("LesplanWoensdag").innerHTML = woensdag.Lesplan;
+            document.getElementById("OpmerkingWoensdag").innerHTML = woensdag.Opmerking;
+        }
+            
+
+        function DonderdagAdmin(){
+            var donderdag = {
+                Leerling: document.getElementById("LeerlingDonderdagInvoer").value,
+                Adres: document.getElementById("AdresDonderdagInvoer").value,
+                Lesplan: document.getElementById("LesplanDonderdagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingDonderdagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = donderdag.Leerling;
+            document.getElementById("AdresDonderdag").innerHTML = donderdag.Adres;
+            document.getElementById("LesplanDonderdag").innerHTML = donderdag.Lesplan;
+            document.getElementById("OpmerkingDonderdag").innerHTML = donderdag.Opmerking;
+        }
+
+        function VrijdagAdmin(){
+            var vrijdag = {
+                Leerling: document.getElementById("LeerlingVrijdagInvoer").value,
+                Adres: document.getElementById("AdresVrijdagInvoer").value,
+                Lesplan: document.getElementById("LesplanVrijdagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingVrijdagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = vrijdag.Leerling;
+            document.getElementById("AdresVrijdag").innerHTML = vrijdag.Adres;
+            document.getElementById("LesplanVrijdag").innerHTML = vrijdag.Lesplan;
+            document.getElementById("OpmerkingVrijdag").innerHTML = vrijdag.Opmerking;
+        }
+
+        function ZaterdagAdmin(){
+            var zaterdag = {
+                Leerling: document.getElementById("LeerlingZaterdagInvoer").value,
+                Adres: document.getElementById("AdresZaterdagInvoer").value,
+                Lesplan: document.getElementById("LesplanZaterdagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingZaterdagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = zaterdag.Leerling;
+            document.getElementById("AdresZaterdag").innerHTML = zaterdag.Adres;
+            document.getElementById("LesplanZaterdag").innerHTML = zaterdag.Lesplan;
+            document.getElementById("OpmerkingZaterdag").innerHTML = zaterdag.Opmerking;
+        }
+
+        function ZondagAdmin(){
+            var zondag = {
+                Leerling: document.getElementById("LeerlingZondagInvoer").value,
+                Adres: document.getElementById("AdresZondagInvoer").value,
+                Lesplan: document.getElementById("LesplanZondagInvoer").value,
+                Opmerking: document.getElementById("OpmerkingZondagInvoer").value,
+            };
+            
+            document.getElementById("LeerlingZondag").innerHTML = zondag.Leerling;
+            document.getElementById("AdresZondag").innerHTML = zondag.Adres;
+            document.getElementById("LesplanZondag").innerHTML = zondag.Lesplan;
+            document.getElementById("OpmerkingZondag").innerHTML = zondag.Opmerking;
+        }
+
+        </script>
+        
+    </body>
+</html>

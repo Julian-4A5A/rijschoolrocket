@@ -1,0 +1,133 @@
+html{height: 98%;}
+body{height:98%;}
+#content{
+    width: 97%;
+    height: 98%;
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    
+    
+}
+header {
+    text-align: center;
+    background-color: gray;
+    border: 3px solid black;
+    width: auto;
+    color: red;
+    margin-left: 0px;
+}
+
+body {
+    background-color: #FFCC00;
+    margin: auto;
+}
+
+footer {
+    border: 3px solid black;
+    width: 100%;
+    padding: 20px;
+    background-color: red;
+    margin-left: 0px;
+    position: fixed;
+    bottom: 0px;
+}
+
+#topnav li{
+    list-style-type: none;
+    display: inline;
+}
+
+#topnav {
+   background-color: red;
+   border: 3px solid black;
+   width: auto;
+   margin: auto;
+   text-align: center;
+   margin-left: 0px;
+}
+
+.underline {
+    text-decoration: underline;
+    font-size: 25px;
+    text-decoration: bold;
+}
+
+#image {
+    position: absolute;
+    right: 0px;
+    top: 238px;
+}
+
+
+
+#nav, #nav ul{ 
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+.meunut {
+        text-decoration: none;
+        font-family:sans-serif;
+    }
+#menu {
+        background-color: black;
+        height: 35px;
+        border:solid 3px red;
+    }
+    
+#nav li {
+        float: left;
+        width: 200px
+    }
+#nav ul {
+        position: absolute;
+        width: 200px;
+        left: -1000px;
+    }
+#nav li:hover ul {
+        left: auto;}
+        
+#nav   li:hover, li a:hover {
+      background: #000;
+}
+#menu  ul li a {
+    display: block;background: #000;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+      
+  }
+  #menu ul li {
+      display: block;
+      float: left;
+      border:1px solid #000
+      
+  }
+  #nav ul li {
+      display: block;position: relative;
+      float: left;
+      border:1px solid #000  
+}    
+
+#nav  li:hover a{
+      background: #f00;
+      
+  }
+
+@media only screen and (max-width: 700px){
+    header{
+        margin-bottom:150px;
+    }
+   table{
+       font-size:100%;
+   }
+    footer{
+        display:none;
+    }
+}
